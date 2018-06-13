@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/plain"
+    tools:context="com.smartcount.smart_count.core.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/lightorange"
+            android:textSize="25dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/digicount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily=""
+            android:text="SMARTCOUNT"
+            android:textColor="@color/lightorange"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/lightorange"
+                android:drawableLeft="@drawable/user"
+                android:hint="User Name"
+                android:textColor="@color/lightorange"
+                android:textColorHint="@color/lightorange"
+                android:inputType="textAutoComplete"
+                android:textAlignment="center" />
+
+            <EditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/lightorange"
+            android:drawableLeft="@drawable/aticon"
+            android:textColorHint="@color/lightorange"
+            android:textColor="@color/lightorange"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textAlignment="center" />
+
+
+            <EditText
+                android:id="@+id/etpass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/key"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/lightorange"
+                android:textColorHint="@color/lightorange"
+                android:backgroundTint="@color/lightorange"
+                android:textAlignment="center" />
+
+
+            <Button
+                android:id="@+id/btnsignup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/logbtn"
+                android:gravity="center"
+                android:text="SIGN UP"
+                android:textColor="@color/lightorange" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Already Have an account"
+                android:textColor="#b2ede4e4" />
+
+            <TextView
+                android:id="@+id/tvsignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:onClick="tvsignup"
+                android:text="Sign In"
+                android:textColor="@color/lightorange" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

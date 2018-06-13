@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plain"
+    android:orientation="vertical"
+    tools:context="com.smartcount.smart_count.core.CountingMethod">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_action_user"
+            android:gravity="center"
+            android:text="Hello Jerry!"
+            android:textColor="@color/lightorange" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Just One More Step!"
+            android:textColor="@color/lightorange"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvlogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/logout"
+            android:gravity="center"
+            android:onClick="tvlog"
+            android:text="Sign Out"
+            android:textColor="@color/lightorange" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Select your preffered\nCounting Method"
+            android:textColor="@color/lightorange"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="By Gender Count"
+                android:onClick="gender"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="** Count by no. of males and females in your audience"
+                android:textColor="@color/lightorange" />
+
+            <Button
+                android:id="@+id/occupancy"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="occupancy"
+                android:text="By Seat Occupancy Count"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="** Count by no.of occupied and unoccupied seats "
+                android:textColor="@color/lightorange" />
+
+            <Button
+                android:id="@+id/aggregate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="aggregate"
+                android:text="By Aggregate Total"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="** Count by aggregate totals"
+                android:textColor="@color/lightorange" />
+
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvback"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="40dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableBottom="@drawable/ic_action_back"-->
+                <!--android:gravity="center"-->
+                <!--android:onClick="tvback"-->
+                <!--android:text="BACK"-->
+                <!--android:textColor="@color/lightorange" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvnext"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginTop="40dp"-->
+                <!--android:onClick="tvnext"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableBottom="@drawable/ic_action_next"-->
+                <!--android:textColor="@color/lightorange"-->
+                <!--android:text="NEXT"/>-->
+
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:gravity="bottom">
+
+        <include layout="@layout/footer"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

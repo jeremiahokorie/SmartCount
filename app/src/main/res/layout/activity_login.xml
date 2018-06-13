@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plain"
+    android:orientation="vertical"
+    tools:context="com.smartcount.smart_count.core.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textColor="@color/lightorange"
+            android:textSize="25dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/digicount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily=""
+            android:text="SMARTCOUNT"
+            android:textColor="@color/lightorange"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etuser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/lightorange"
+                android:drawableLeft="@drawable/user"
+                android:hint="User Name"
+                android:inputType="textAutoComplete"
+                android:textAlignment="center"
+                android:textColor="@color/lightorange"
+                android:textColorHint="@color/lightorange" />
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/lightorange"/>-->
+
+            <EditText
+                android:id="@+id/etpass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/lightorange"
+                android:drawableLeft="@drawable/key"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/lightorange"
+                android:textColorHint="@color/lightorange" />
+
+
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/logbtn"
+                android:gravity="center"
+                android:text="SIGN IN"
+                android:textColor="@color/lightorange" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dont have an account?"
+                android:textSize="15dp"
+                android:textColor="#b2ede4e4" />
+
+            <TextView
+                android:id="@+id/tvsignin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:onClick="tvsignin"
+                android:text="Sign Up"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/lightorange" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

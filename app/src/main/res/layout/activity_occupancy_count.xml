@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plain"
+    android:orientation="vertical"
+    tools:context="com.smartcount.smart_count.core.OccupancyCount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_action_user"
+            android:gravity="center"
+            android:text="Hello Jerry!"
+            android:textColor="@color/lightorange" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Seat Occupancy Count"
+            android:textAllCaps="true"
+            android:textColor="@color/lightorange"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvlogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/logout"
+            android:gravity="center"
+            android:onClick="tvlogout"
+            android:text="Sign Out"
+            android:textColor="@color/lightorange" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@color/lightorange"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#710762"
+            android:onClick="rowdecrease"
+            android:drawableLeft="@drawable/ic_action_back" />
+
+        <TextView
+            android:id="@+id/rowresult"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightorange"
+            android:gravity="center"
+            android:text="ROW 1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="#710762"
+            android:onClick="rowincrease"
+            android:drawableLeft="@drawable/ic_action_next" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:text="Fixed No of \nSeat"
+            android:textColor="@color/lightorange"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fxseat"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.24"
+            android:background="@color/lightorange"
+            android:gravity="center"
+            android:text="0000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/lightorange"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/occupied"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Occupied"
+                    android:background="#710762"
+                    android:textColor="@color/lightorange"
+                    android:textAlignment="center"
+                    android:textColorHighlight="@color/lightorange" />
+
+                <TextView
+                    android:id="@+id/unoccupied"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Unoccupied"
+                    android:textColorHighlight="@color/lightorange" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/seat1"
+                    android:text="Occupied"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/etseat"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Enter No of Seat"
+                    android:inputType="number"
+                    android:textColor="@color/lightorange"
+                    android:textColorHint="@color/lightorange" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/value"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:background="@color/lightorange"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btnsubmit"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/lightorange"
+            android:gravity="center"
+            android:onClick="TextView"
+            android:text="SUBMIT"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvreset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="tvreset"
+            android:text="CANCEL"
+            android:textColor="@color/lightorange"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:gravity="bottom">
+
+        <include layout="@layout/footer" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
